@@ -1,0 +1,496 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.15063}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs40\lang9\par
+                 Chap 20-38\par
+\par
+\fs24 <html>\par
+    <title> Saraib</title>\par
+    <head>\par
+        <script src="app.js"></script>\par
+<body><h1></h1></body>\par
+    </head>\par
+</html>\par
+\fs22\par
+\par
+Math Methods\par
+\par
+\par
+                      Q1:\par
+                      \par
+                      var a=+prompt('Enter Number');\par
+                      document.write("Number:"+ a +"<br>");\par
+                      \par
+                      document.write( "Round of value:"+ Math.round(a)+"<br>");\par
+                      document.write("Floor Value:"+ Math.floor(a)+"<br>" );\par
+                      document.write("Ceil Value:"+ Math.ceil(a));\par
+                      \par
+                      Q2:\par
+                      var a=+prompt('Enter negative floating Number');\par
+                      document.write("Number:"+ a +"<br>");\par
+                      \par
+                      document.write( "Round of value:"+ Math.round(a)+"<br>");\par
+                      document.write("Floor Value:"+ Math.floor(a)+"<br>" );\par
+                      document.write("Ceil Value:"+ Math.ceil(a));\par
+                      Q3:\par
+                      var a=+prompt('Enter value');\par
+                      document.write("Number:"+ a +"<br>");\par
+                      \par
+                      document.write( "Absolute Value :"+ Math.abs(a)+"<br>");\par
+                      Q4:\par
+                      var diceRoll = Math.floor( Math.random() * 6) +1;\par
+                      document.write('You rolled a ' + diceRoll);\par
+                      Q5:\par
+                      var cointoss = Math.floor( Math.random() *2 ) +1;\par
+                      \par
+                      if(cointoss===1 )\par
+                      \{\par
+                          document.write("Its a Head");\par
+                      \par
+                      \}\par
+                      else\{\par
+                          document.write("Its a Tail");\par
+                      \}\par
+                      Q6:\par
+                      var rand = Math.floor( Math.random() *100 ) +1;\par
+                      document.write("Random Number :"+ rand );\par
+                      Q7:\par
+                      var weight=prompt("Enter weight Possible user inputs can be: \\n a. 50 \\n b. 50kgs \\n c. 50.2kgs \\n d. 50.2kilograms")\par
+                       parseInt(weight)\par
+                       document.write("The weight of user input is "+weight+" kilograms <br>")\par
+                      Q8:\par
+                      var a=+prompt('Guess The number between 1 to 10');\par
+                      if(a===4)\{\par
+                          alert("Conratulation Its a Right Answer");\par
+                      \}\par
+                      else\{\par
+                          alert("Try Again!");\par
+                      \}\par
+                                              String Methods\par
+                      Q1:\par
+                      var a=prompt('Enter First Name');\par
+                      var b=prompt('Enter Last Name');\par
+                      var c=a+b;\par
+                      alert("Welcome"+ " "+ c );\par
+                      Q2:\par
+                      var a=prompt('Enter Favoutite Mobile Model');\par
+                      var n=a.length;\par
+                      document.write("The length of string :"+ n );\par
+                      Q3:\par
+                      var a="Pakistani";\par
+                      alert(a);\par
+                      alert("Index Number of n:   "+a.indexOf("n"));\par
+                      \par
+                      Q5:\par
+                      var a="Pakistani";\par
+                      alert(a);\par
+                      var n=+prompt('Enter index number');\par
+                      \par
+                      alert("Character at " + n +":"+ a.charAt(n) );\par
+                      Q6:\par
+                      var a=prompt('Enter First Name');\par
+                      var b=prompt('Enter Last Name');\par
+                      var FullName=a.concat(b);\par
+                      alert("wellcome"+"  "+ FullName );\par
+                      Q7:\par
+                      var a="Hyderabad";\par
+                      alert("City:"+a);\par
+                      var b=a.replace("Hyder","Islam");\par
+                      alert("After Replacement:"+b );\par
+                      Q8:\par
+                      var a="Ali and Sami are Bestfriends. They play cricket and football together.";\par
+                      \par
+                      alert(a);\par
+                      var b=a.replace("and","&");\par
+                      alert("After Replacement:"+b );\par
+                      Q9:\par
+                      var a="472";\par
+                      document.write("Value:"+ a + "<br>") ;\par
+                      document.write("Type:String" + "<br>") ;\par
+                      var a = parseInt("472") ;\par
+                      document.write("Vlaue:"+ a + "<br>") ;\par
+                      document.write("Type:Number");\par
+                      Q10:\par
+                      var a=prompt('Enter Any word in lower case');\par
+                      var b=a.toUpperCase();\par
+                      alert("Upercase:"+ b);\par
+                      Q11:\par
+                      function titleCase(string) \{\par
+                          var sentence = string.toLowerCase().split(" ");\par
+                          for(var i = 0; i< sentence.length; i++)\{\par
+                             sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);\par
+                          \}\par
+                       document.write(sentence.join(" "));\par
+                       return sentence;\par
+                       \}\par
+                       titleCase("tutorix is one of best e-platforms");\par
+                       \par
+                      \par
+                      Q12:\par
+                      var a="35.36";\par
+                      alert(a);\par
+                      var b=a.replace(".","");\par
+                      alert("Result:"+b );\par
+                      Q13:\par
+                      var text=prompt('Enter');\par
+                      for (var i = 0; i < text.length; i++) \{\par
+                           if (text.charAt(i) === "!" || text.charAt(i)==="@" || text.charAt(i)==="." ) \{\par
+                           alert("Enter Valid username");\par
+                           \par
+                           break;\par
+                      \}\par
+                           \}\par
+                      Q14:\par
+                       var A=["cake","apple pie","cookie","chips","patties"]\par
+                       var input=prompt("Welcome to ABC Bakery . what do you want to order sir/ma'am")\par
+                       var bak=input.toLowerCase()\par
+                       var bakery=A.indexOf(bak)\par
+                       if(A.indexOf(bak)!=-1)\{   alert(bak +" is available at "+bakery+" index in our bakery")\par
+                       \}\par
+                      else\{\par
+                         alert("we are sorry "+bak+" is not available in our bakery")  \}\par
+                      Q15:\par
+                      var input = prompt("Enter password");\par
+                      \par
+                      if (isNaN(parseInt(input[0]))) \{\par
+                        alert("password is valid");\par
+                      \} else \{\par
+                        alert("Password should not start with number");\par
+                      \}\par
+                      Q16:\par
+                      var str = 'University Of Karachi';\par
+                      var ar = str.split(''); \par
+                      console.log( ar );\par
+                      Q17:\par
+                      var a=prompt('Enter word');\par
+                      b=a.length;\par
+                      alert(b);\par
+                      alert("Last character of input:"+ a.charAt(b));\par
+                      Q18:\par
+                      \par
+                      var text="the quick brown fox jumps over the lazy dog."\par
+                      for(i=0;i<=text.length;i++)\{\par
+                          if(text.slice(i,i+3)==="the")\{\par
+                              document.write("There are 2 occurence(s) of word 'the'<br> ")\par
+                             break; \}\par
+                      else\{\par
+                          document.write("No 'the' found")\par
+                       \}\par
+                       \}\par
+                                      Date Methods\par
+                      Q1:\par
+                      var d = new Date();\par
+                      document.write(d);\par
+                      Q2:\par
+                      const monthNames = ["January", "February", "March", "April", "May", "June",\par
+                        "July", "August", "September", "October", "November", "December"\par
+                      ];\par
+                      \par
+                      const d = new Date();\par
+                      document.write("The current month is " + monthNames[d.getMonth()]);\par
+                      Q3:\par
+                      var d = new Date();\par
+                      var weekday = new Array(7);\par
+                      weekday[0] = "Sun";\par
+                      weekday[1] = "Mon";\par
+                      weekday[2] = "Tue";\par
+                      weekday[3] = "Wed";\par
+                      weekday[4] = "Thur";\par
+                      weekday[5] = "Fri";\par
+                      weekday[6] = "Sat";\par
+                      \par
+                      var n = weekday[d.getDay()];\par
+                      console.log(n);\par
+                      Q4:\par
+                      var d = new Date();\par
+                      var weekday = new Array(7);\par
+                      weekday[0] = "Sun";\par
+                      weekday[1] = "Mon";\par
+                      weekday[2] = "Tue";\par
+                      weekday[3] = "Wed";\par
+                      weekday[4] = "Thur";\par
+                      weekday[5] = "Fri";\par
+                      weekday[6] = "Sat";\par
+                      \par
+                      var n = weekday[d.getDay()];\par
+                      console.log(n);\par
+                      if (weekday[0]==="Sun" || weekday[6]==="Sat" ) \{\par
+                          alert("Funday");\par
+                      \par
+                          \par
+                      \}\par
+                      Q5:\par
+                      var d = new Date();\par
+                      var currentMonth = d.getDate();\par
+                      alert(currentMonth);\par
+                      if (currentMonth<16) \{\par
+                          alert("First Fifteen Days Of month");\par
+                          \par
+                      \}\par
+                      else\{\par
+                          alert("Last Days Of Month");\par
+                      \}\par
+                      Q6:\par
+                      var today = new Date ();\par
+                       var todaymili=today.getTime();\par
+                      var t =todaymili/(1000*60*60)\par
+                      document.write("Current Date: " + today + "<br>" )\par
+                      document.write("Elapsed miliseconds since January 1, 1970: " + todaymili + "<br>" )\par
+                       document.write("Elapsed minutes since January 1, 1970: " + t)\par
+                      Q7:\par
+                      var d = new Date();\par
+                      var currenttime = d.getHours();\par
+                      alert(currenttime);\par
+                      if(currenttime<12)\{\par
+                          alert("Its PM");\par
+                      \}\par
+                      else\{\par
+                          alert("its AM");\par
+                      \}\par
+                      \par
+                      Q8:\par
+                      var month = 11; \par
+                      var d = new Date(2020, month + 1, 0);\par
+                      Q9:\par
+                      const date1 = new Date('6/18/2015');\par
+                      \par
+                      alert("Later Date::"+ d); // last day in December\par
+                      const date2 = new Date('4/25/2020');\par
+                      const diffTime = Math.abs(date2 - date1);\par
+                      const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); \par
+                      alert(diffTime + " milliseconds");\par
+                      alert(diffDays + " days have been passsed since 1st ramzan 2015");\par
+                      Q10:\par
+                      var s_d = new Date("Jan 1,2015");\par
+                       var p=s_d.getTime();\par
+                       var e_d = new Date();\par
+                       var today=e_d.getTime();\par
+                       var difference =   today-p;\par
+                       var seconds = (difference / (1000*60));\par
+                       document.write("On reference date  "+ e_d + " "+ seconds + " seconds had passed since 2015");\par
+                      Q11:\par
+                       var Date=new Date();\par
+                      document.write("Current Date: "+Date)\par
+                       Date.setHours(Date.getHours()-1);\par
+                       document.write("<br> 1 Hour ago, it was: "+Date);\par
+                      Q12:\par
+                      var a=new Date();\par
+                      \par
+                      alert(a);\par
+                      var b=new Date('6/21/1920');\par
+                      alert("100 years ago it was ::"+b);\par
+                      Q13:\par
+                      var a=+prompt('Enter your age');\par
+                      b=2020-a;\par
+                      alert("Your Birth Year is "+ " "+b);\par
+                      Q14:\par
+                      var ConsumerName=prompt('Enter consumer Name' );\par
+                      document.write("Consumer Nmae:"+ ConsumerName + "<br>");\par
+                      var a=new Date();\par
+                      var a=a.getMonth();\par
+                      if(a===5)\{\par
+                         document.write ("Current Month:June" + "<br>");\par
+                      \}\par
+                      \par
+                      \par
+                      \par
+                      var  b=+prompt('Enter Number of Units Used');\par
+                      document.write("Number of Units:"+b +"<br>");\par
+                      var c=16;\par
+                      document.write("Charges Per Unit:"+c + "<br>");\par
+                      var d=b*c;\par
+                      document.write("Net Amount Payable(within Due Date):"+d + "<br>");\par
+                      var e=350;\par
+                      document.write("Late payment cahrges:"+e + "<br>");\par
+                      var f=e+d;\par
+                      document.write("Amount Payabale (after Due Date):"+f + "<br>");\par
+                      \par
+                                          Functions\par
+                      Q1:\par
+                      function date()\{\par
+                         var a=new Date();\par
+                         alert(a);\par
+                      \}\par
+                      date();\par
+                      Q2:\par
+                      function name()\{\par
+                         var a=prompt('Enter first Name');\par
+                         var b=prompt('Enter Last Name');\par
+                         var c=a+b;\par
+                         alert("Wellcome"+" "+c);\par
+                      \}\par
+                      name();\par
+                      Q3:\par
+                      function add()\{\par
+                         var a=+prompt('1st number');\par
+                         var b=+prompt('2nd number');\par
+                         return c=a+b;\par
+                         \par
+                      \}\par
+                       var g=add();\par
+                       alert(g);\par
+                      Q4:\par
+                      var n1=+prompt("Enter First Number")\par
+                       var op=prompt("Enter the operation")\par
+                       var n2=+prompt("Enter Second Number")\par
+                       function calcu(nu1,opr,nu2)\{\par
+                           if(op=="+")\{\par
+                               return n1+n2;\par
+                      \par
+                         \}\par
+                          else if(op =="-")\{\par
+                              return n1-n2;\par
+                          \}\par
+                           else if(op =="/")\{\par
+                               return n1/n2;\par
+                      \par
+                         \}\par
+                           else if(op =="*")\{\par
+                             return n1*n2;\par
+                      \par
+                           \}\par
+                          else \{\par
+                          alert("invalid numbers")\par
+                          \}\par
+                      \} var c=calcu(n1,op,n2);\par
+                       document.write("Your result will be   " + c)\par
+                      Q5:\par
+                      function square(b)\{\par
+                         var a=b*b;\par
+                         alert(a);\par
+                      \}\par
+                      square(4);\par
+                      Q6:\par
+                      function fact1(b)\{\par
+                         var fact=1;\par
+                         for(i=b;i>1;i--)\{\par
+                            \par
+                           var fact=fact*i;\par
+                           \par
+                         \}\par
+                         console.log(fact);\par
+                       \par
+                      \}\par
+                      fact1(5);\par
+                      Q7:\par
+                      var s_num = prompt("enter starting number")\par
+                      var e_num = prompt("enter ending number") \par
+                      function count()\{\par
+                         for (var i=s_num ; i<=e_num ; i++)\{\par
+                      \par
+                             document.write(i +"<br>") ;   \par
+                           \}  \par
+                      \}\par
+                      count();\par
+                      \par
+                      Q8:\par
+                       var base = +prompt("enter base")\par
+                       var perp = +prompt("enter perpendicular")\par
+                      var h;\par
+                       function calculateHypotenuse(b,p)\{\par
+                            function calculatesquare(h)\par
+                            return document.write( "Hypotenuse of Right angle tringle will be "+ (b*b+ p*p));\par
+                      \par
+                            \} \par
+                            calculatesquare();\par
+                       \}\par
+                       calculateHypotenuse(base, perp);\par
+                      \par
+                      \par
+                      Q9:\par
+                      \par
+                      var width=+prompt("enter width of rectangle")\par
+                       function area(w,h)\{\par
+                           return  w*h; ;\par
+                       \}\par
+                      var a =area(width, 4)\par
+                      document.write("the area of recatngle will be  "+ a)\par
+                      \par
+                      Q10:\par
+                      \par
+                      function par()\par
+                       \{\par
+                       var word=prompt("enter your word ");\par
+                      var check="";\par
+                       for (var i=word.length-1; i>=0; i--) \par
+                         \{\par
+                          check+=word[i]\par
+                          \}\par
+                      if (word===check)\{\par
+                           document.write(word+" is palandrome word")\par
+                         \}\par
+                      else\{\par
+                          document.write(word+" is  not palandrome word")\par
+                       \}\par
+                      \par
+                      \}\par
+                        par();\par
+                      \par
+                      \par
+                      Q11:\par
+                      var str=prompt("enter any string");\par
+                       function  c_str(s)\{\par
+                      \par
+                          var a = str.split(' ');\par
+                          var b = [];\par
+                      \par
+                       for(var i = 0; i < a.length; i++)\{\par
+                              b.push(a[i].charAt(0).toUpperCase()+a[i].slice(1));\par
+                        \}\par
+                         return b.join(' ');\par
+                       \}\par
+                      var a=c_str(str);\par
+                       document.write("Required string will be "+ a)\par
+                      \par
+                      Q12:\par
+                      \par
+                      \par
+                       function l_word(str)\par
+                      \{\par
+                         var array1 = str.match(/\\w[a-z]\{0,\}/gi);\par
+                       var result = array1[0];\par
+                      \par
+                       for(var x = 1 ; x < array1.length ; x++)\par
+                       \{\par
+                           if(result.length < array1[x].length)\par
+                          \{\par
+                          result = array1[x];\par
+                           \} \par
+                         \}\par
+                         return result;\par
+                       \}\par
+                      /document.write(l_word('DAWOOD UNIVERSITY'));\par
+                      \par
+                      \par
+                      Q13:\par
+                      \par
+                      function count(str, l) \par
+                      \{\par
+                       var l_Count = 0;\par
+                       for (var i = 0; i < str.length; i++) \par
+                        \{\par
+                          if (str.charAt(i) == l) \par
+                             \{\par
+                            l_Count += 1;\par
+                          \}\par
+                      \}\par
+                         return l_Count;\par
+                       \}\par
+                      \par
+                      document.write("the number of occurrences of the specified letter within the string will be " + count('saira', 'a'));\par
+                      \par
+                      Q14:\par
+                       var radius=prompt("enter radius of circle")\par
+                       var r_c ,a_c=0;\par
+                      function calcCircumference(r)\{\par
+                           r_c=2*3.142*r;\par
+                           return r_c\par
+                      \}\par
+                       function calcArea(a)\{\par
+                          a_c=3.142*a*a;\par
+                           return a_c\par
+                       \}\par
+                       document.write("The circumference of circle will be "+ calcCircumference(radius) +"<br>");\par
+                      document.write("The Area of circle will be "+ calcArea(radius));\par
+                      \par
+}
+ 
